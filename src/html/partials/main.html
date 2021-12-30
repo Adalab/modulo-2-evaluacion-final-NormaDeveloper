@@ -1,1 +1,26 @@
-<main class="page__main"></main>
+<main class="page__main">
+  <form action="#" class="form js_form">
+    <input
+      class="form__input js_searchInput"
+      type="text"
+      name="search"
+      id="search"
+      placeholder="Escribe mínimo 3 letras"
+    />
+    <input type="button" value="Buscar" class="form__button js_searchBtn" />
+  </form>
+
+  <div class="container">
+    <section class="section__fav">
+      <h2 class="section__fav--title">Series favoritas</h2>
+      <ul class="main__list-favorite js-favList"></ul>
+      <input type="button" value="Reset" class="section__fav-reset js_reset" />
+    </section>
+    <section class="section__results">
+      <h2 class="section__results--title">Resultados</h2>
+      <ul class="section__results--list js-resultsList">
+        Realiza una busqueda...
+      </ul>
+    </section>
+  </div>
+</main>

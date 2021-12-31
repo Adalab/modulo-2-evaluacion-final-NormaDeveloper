@@ -1,4 +1,35 @@
-.footer {
+.page__footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: $font-main;
+  background-color: $red;
+  height: 405px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: $background-color-grey;
+  padding: 170px 0px;
+
   @include tablet {
+    height: 200px;
+    padding: 60px 0px;
+  }
+  & .footer__made {
+    color: $font-grey;
+  }
+  & .link__footer {
+    color: $background-color-grey;
+    cursor: pointer;
+  }
+
+  & .link__my_github {
+    color: $font-grey;
+    cursor: pointer;
+  }
+
+  & .rights {
+    color: $font-grey;
   }
 }

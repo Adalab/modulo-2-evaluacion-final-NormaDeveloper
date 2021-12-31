@@ -28,7 +28,7 @@ function handleClickImg(e) {
   }
 
   //Save favorites in Local Storage
-  //setFavMoviesInLocalStorage();
+  setFavMoviesInLocalStorage();
 
   //Render favorite movies
   renderFavMovies();

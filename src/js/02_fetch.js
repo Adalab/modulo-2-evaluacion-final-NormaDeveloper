@@ -3,7 +3,7 @@ function conectToApi() {
   let inputValue = inputField.value.toLowerCase();
   if (inputValue.length >= 3) {
     //get movies from api
-    fetch(`https://api.jikan.moe/v3/search/anime?q=${inputValue}&limit=8`)
+    fetch(`https://api.jikan.moe/v3/search/anime?q=${inputValue}&limit=9`)
       .then((response) => response.json())
       .then((data) => {
         moviesData = data.results;

@@ -13,6 +13,10 @@
     margin-left: 30px;
     margin-right: 30px;
 
+    @include tablet {
+      margin-top: 60px;
+    }
+
     &__input {
       width: 70%;
       border-top: 0px;
@@ -22,7 +26,13 @@
       caret-color: $red;
       margin-top: 15px;
       font-family: $font-main;
+      font-size: 25px;
       color: #4a4a4a;
+
+      @include tablet {
+        font-size: 35px;
+      }
+
       &:focus {
         outline: none;
         font-family: $font-main;
@@ -59,8 +69,13 @@
 .container {
   display: flex;
   flex-direction: column-reverse;
-
   font-family: $font-main;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .section__results {
@@ -71,7 +86,15 @@
   &--title {
     text-align: center;
     font-size: 50px;
-    color: $background-color-grey;
+    color: $red;
+    @include tablet {
+      margin-top: 160px;
+      font-size: 25px;
+    }
+  }
+
+  & .hidden {
+    display: none;
   }
   &--list {
     text-align: center;
@@ -83,10 +106,14 @@
       cursor: pointer;
       background-color: $arrow-white;
       color: $red;
-      border-radius: 10%;
+      border-radius: 40px;
       width: 210px;
       padding: 0px 12px 20px;
       box-shadow: $background-color-grey 1.5px 1.5px;
+      font-size: 25px;
+      @include tablet {
+        font-size: 20px;
+      }
 
       &--img {
         padding-top: 20px;
@@ -110,7 +137,12 @@
   &--title {
     text-align: center;
     font-size: 50px;
-    color: $red;
+
+    color: $background-color-grey;
+    @include tablet {
+      margin-top: 110px;
+      font-size: 25px;
+    }
   }
 
   &--list-favorite {
@@ -121,13 +153,25 @@
 
     &--li {
       margin: 25px auto;
-      cursor: pointer;
       background-color: #5c0303ea;
       color: $arrow-white;
-      border-radius: 10%;
+      border-radius: 30px;
       width: 210px;
       padding: 0px 12px 20px;
       box-shadow: $red 1.5px 1.5px;
+      font-size: 25px;
+      cursor: pointer;
+      @include tablet {
+        font-size: 20px;
+
+        margin: 25px auto;
+        background-color: #5c0303ea;
+        color: $arrow-white;
+        border-radius: 30px;
+        width: 170px;
+        padding: 0px 12px 20px;
+        box-shadow: $red 1.5px 1.5px;
+      }
 
       &--img {
         padding-top: 20px;
@@ -157,27 +201,34 @@
     font-family: $font-main;
     font-size: 25px;
     border-style: none;
-    border-radius: 4px;
+    border-radius: 30px;
     color: $arrow-white;
     text-transform: uppercase;
     margin: 0px;
-    margin-top: 14px;
-    width: 50%;
+    margin-top: 50px;
+    width: 40%;
+    height: 60px;
+
+    @include tablet {
+      border-radius: 90px;
+      width: 80%;
+      margin-top: 80px;
+    }
 
     /*Transición botón reset*/
     transition: box-shadow linear 0.3s, background-color linear 0.3s;
 
-    // &:hover {
-    //   box-shadow: 0 0 10px #b8b8b9;
-    //   background-color: var(--secondary-color);
-    // }
+    &:hover {
+      box-shadow: 0 0 10px #b8b8b9;
+      background-color: #5c0303ea;
+    }
   }
 }
 
 .fav {
   background-color: $red;
   color: $arrow-white;
-  border-radius: 10%;
+  border-radius: 40px;
   width: 210px;
   padding: 0px 12px 20px;
   box-shadow: #5c0303ab 1.5px 1.5px;

@@ -34,7 +34,8 @@ searchBtn.addEventListener('click', handleSearchBtn);
 // Function to render all movies
 function renderAllMovies() {
   resultsList.textContent = '';
-
+  const resultsTitle = document.querySelector('.js_reultsTitle');
+  resultsTitle.classList.remove('hidden');
   for (const eachMovie of moviesData) {
     //Evaluate if movie is in fav arr
     console.log(eachMovie.title);

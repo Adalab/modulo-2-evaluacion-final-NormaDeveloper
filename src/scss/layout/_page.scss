@@ -120,7 +120,7 @@
   flex-direction: column;
 
   @include desktop {
-    width: 890px;
+    width: 670px;
     align-items: center;
   }
 
@@ -171,9 +171,9 @@
         font-size: 20px;
       }
       @include desktop {
-        width: 280px;
-        font-size: 35px;
-        padding: 0px 12px 35px;
+        // width: 280px;
+        // font-size: 35px;
+        // padding: 0px 12px 35px;
       }
 
       &--img {
@@ -184,8 +184,8 @@
         border-radius: 20%;
         color: $arrow-white;
         @include desktop {
-          width: 250px;
-          height: 290px;
+          // width: 250px;
+          // height: 290px;
         }
       }
     }
@@ -201,6 +201,10 @@
   @include tablet {
     padding-top: 0px;
     width: 720px;
+  }
+
+  @include desktop {
+    width: 420px;
   }
 
   &--title {
@@ -224,33 +228,30 @@
 
     &--li {
       margin: 25px auto;
-      background-color: #5c0303ea;
+      background-color: $font-grey;
       color: $arrow-white;
       border-radius: 30px;
       width: 210px;
       padding: 0px 12px 20px;
-      box-shadow: $red 1.5px 1.5px;
+      box-shadow: $background-color-grey 1.5px 1.5px;
       font-size: 25px;
       // cursor: pointer;
       @include tablet {
         font-size: 20px;
         margin: 25px auto;
-        background-color: $font-grey;
-        color: $arrow-white;
         border-radius: 40px;
         width: 170px;
         padding: 0px 12px 20px;
-        box-shadow: $background-color-grey 1.5px 1.5px;
       }
 
       @include desktop {
-        width: 480px;
+        width: 380px;
         font-size: 25px;
         padding: 0px 15px 10px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 159px;
+        height: 149px;
         margin: 25px auto 9px;
       }
 
@@ -273,7 +274,8 @@
       & .favTitle {
         @include desktop {
           width: 210px;
-          margin: 0 auto;
+          margin: 0px 9px;
+          font-size: 16px;
         }
       }
       & .delete-btn {
@@ -296,10 +298,16 @@
           transform: scale(1.1);
         }
 
+        @include tablet {
+          width: 39px;
+          margin-top: 10px;
+        }
         @include desktop {
-          font-size: 35px;
+          font-size: 20px;
           box-shadow: $background-color-grey 1.5px 1.5px;
-          width: 12%;
+          width: 34px;
+          margin-top: 0px;
+
           cursor: pointer;
         }
       }
@@ -354,8 +362,8 @@
   }
 
   @include desktop {
-    width: 280px;
-    font-size: 35px;
-    padding: 0px 12px 35px;
+    // width: 280px;
+    // font-size: 35px;
+    // padding: 0px 12px 35px;
   }
 }

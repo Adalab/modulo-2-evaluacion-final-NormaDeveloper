@@ -129,7 +129,6 @@
     font-size: 50px;
     color: $red;
     @include tablet {
-      //margin-top: 160px;
       font-size: 25px;
     }
 
@@ -165,8 +164,6 @@
 
       &:hover {
         box-shadow: 0 0 10px $arrow-white;
-        // background-color: $font-grey;
-        // color: $arrow-white;
         transform: scale(1.1);
       }
 
@@ -200,12 +197,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //margin-bottom: 50px;
+
   @include tablet {
     padding-top: 0px;
-  }
-
-  @include desktop {
     width: 720px;
   }
 
@@ -215,11 +209,9 @@
 
     color: $background-color-grey;
     @include tablet {
-      //margin-top: 110px;
       font-size: 25px;
     }
     @include desktop {
-      //margin-top: 110px;
       font-size: 65px;
     }
   }
@@ -243,12 +235,12 @@
       @include tablet {
         font-size: 20px;
         margin: 25px auto;
-        background-color: #5c0303da;
+        background-color: $font-grey;
         color: $arrow-white;
         border-radius: 40px;
         width: 170px;
         padding: 0px 12px 20px;
-        box-shadow: $red 1.5px 1.5px;
+        box-shadow: $background-color-grey 1.5px 1.5px;
       }
 
       @include desktop {
@@ -285,12 +277,12 @@
         }
       }
       & .delete-btn {
-        background-color: #5c0303fd;
+        background-color: $arrow-white;
         font-family: $font-main;
         font-size: 25px;
         border-style: none;
         border-radius: 40px;
-        color: $arrow-white;
+        color: white;
         text-transform: uppercase;
         margin: 0px;
         margin-top: 20px;
@@ -299,14 +291,14 @@
         transition: box-shadow linear 0.3s, background-color linear 0.3s;
 
         &:hover {
-          box-shadow: 0 0 10px #270202ea;
-          background-color: #5c0303ea;
+          box-shadow: 0 0 10px rgb(97, 10, 10);
+          background-color: $red;
           transform: scale(1.1);
         }
 
         @include desktop {
           font-size: 35px;
-          box-shadow: #800d0dc7 1.5px 1.5px;
+          box-shadow: $background-color-grey 1.5px 1.5px;
           width: 12%;
           cursor: pointer;
         }

@@ -46,13 +46,10 @@ function renderAllMovies() {
 
     //Evaluate if movie is in fav
     let favClass = '';
-    if (movieInFav === undefined) {
-      //If the movie is not in fav arr, then render li with no fav class
-      favClass = '';
-    } else {
-      //If the movie is in fav arr, then render li with fav class
-      favClass = 'fav';
-    }
+
+    //If the movie is not in fav arr, then render li with no fav class
+    //If the movie is in fav arr, then render li with fav class
+    movieInFav === undefined ? (favClass = '') : (favClass = 'fav');
 
     //Evaluate if movie has any image
     //----Example of a movie with no image: Muv-Luv_Alternative_2nd_Season

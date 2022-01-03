@@ -7,7 +7,8 @@
   }
 
   @include desktop {
-    margin-bottom: 40px;
+    margin-bottom: 420px;
+    align-items: center;
   }
 
   .form {
@@ -22,7 +23,11 @@
     }
 
     @include desktop {
-      width: 90%;
+      width: 65%;
+      justify-content: space-around;
+
+      margin-left: 0px;
+      margin-right: 0px;
     }
 
     &__input {
@@ -41,6 +46,12 @@
         font-size: 35px;
       }
 
+      @include desktop {
+        width: 50%;
+        flex: auto;
+        font-size: 45px;
+      }
+
       &:focus {
         outline: none;
         font-family: $font-main;
@@ -56,11 +67,9 @@
     &__button {
       color: $arrow-white;
       border-style: none;
-
       // font-family: $font-main;
       // text-transform: uppercase;
       margin-top: 14px;
-
       cursor: pointer;
       height: 60px;
       border-radius: 20px;
@@ -74,13 +83,15 @@
       }
 
       @include desktop {
-        height: 60px;
+        height: 70px;
         border-radius: 20px;
-        width: 50px;
+        width: 70px;
         font-size: 40px;
         background-color: white;
         box-shadow: 0px 0px;
-        margin-left: -200px;
+        margin-left: 15px;
+        font-size: 45px;
+        //flex: auto;
       }
       /*Transición botón buscar*/
       transition: box-shadow linear 0.3s, background-color linear 0.3s;
@@ -106,17 +117,21 @@
   }
 
   @include desktop {
-    width: 1200px;
+    width: 90%;
   }
 }
 
 .section__results {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
 
   @include desktop {
-    width: 700px;
+    width: 890px;
+    align-items: center;
+
+    // padding-top: 50px;
+    //margin-bottom: 50px;
   }
 
   &--title {
@@ -124,8 +139,12 @@
     font-size: 50px;
     color: $red;
     @include tablet {
-      margin-top: 160px;
+      //margin-top: 160px;
       font-size: 25px;
+    }
+
+    @include desktop {
+      font-size: 65px;
     }
   }
 
@@ -155,6 +174,11 @@
       @include tablet {
         font-size: 20px;
       }
+      @include desktop {
+        width: 280px;
+        font-size: 35px;
+        padding: 0px 12px 35px;
+      }
 
       &--img {
         padding-top: 20px;
@@ -163,6 +187,10 @@
         height: 190px;
         border-radius: 20%;
         color: $arrow-white;
+        @include desktop {
+          width: 250px;
+          height: 290px;
+        }
       }
     }
   }
@@ -173,7 +201,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
+  @include tablet {
+    padding-top: 0px;
+  }
+
+  @include desktop {
+    width: 720px;
+  }
 
   &--title {
     text-align: center;
@@ -181,8 +216,12 @@
 
     color: $background-color-grey;
     @include tablet {
-      margin-top: 110px;
+      //margin-top: 110px;
       font-size: 25px;
+    }
+    @include desktop {
+      //margin-top: 110px;
+      font-size: 65px;
     }
   }
 
@@ -204,14 +243,24 @@
       cursor: pointer;
       @include tablet {
         font-size: 20px;
-
         margin: 25px auto;
-        background-color: #5c0303ea;
+        background-color: #5c0303da;
         color: $arrow-white;
-        border-radius: 30px;
+        border-radius: 40px;
         width: 170px;
         padding: 0px 12px 20px;
         box-shadow: $red 1.5px 1.5px;
+      }
+
+      @include desktop {
+        width: 480px;
+        font-size: 25px;
+        padding: 0px 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 159px;
+        margin: 25px auto 9px;
       }
 
       &--img {
@@ -222,8 +271,22 @@
         border-radius: 20%;
       }
 
+      & .favImg {
+        @include desktop {
+          width: 120px;
+          height: 150px;
+          border-radius: 30%;
+        }
+      }
+
+      & .favTitle {
+        @include desktop {
+          width: 210px;
+          margin: 0 auto;
+        }
+      }
       & .delete-btn {
-        background-color: #5c0303ea;
+        background-color: #5c0303fd;
         font-family: $font-main;
         font-size: 25px;
         border-style: none;
@@ -233,6 +296,12 @@
         margin: 0px;
         margin-top: 20px;
         width: 22%;
+
+        @include desktop {
+          font-size: 35px;
+          box-shadow: #800d0dc7 1.5px 1.5px;
+          width: 12%;
+        }
       }
     }
   }
@@ -279,5 +348,11 @@
     cursor: pointer;
 
     font-size: 20px;
+  }
+
+  @include desktop {
+    width: 280px;
+    font-size: 35px;
+    padding: 0px 12px 35px;
   }
 }

@@ -10,7 +10,7 @@ function getFavMoviesFromLocalStorage() {
   } else {
     favMoviesData = JSON.parse(savedFavMovies);
     renderFavMovies();
-    // renderAllMovies();
+    //renderAllMovies();
   }
 }
 

@@ -34,7 +34,7 @@ searchBtn.addEventListener('click', handleSearchBtn);
 // Function to render all movies
 function renderAllMovies() {
   resultsList.textContent = '';
-  const resultsTitle = document.querySelector('.js_reultsTitle');
+  const resultsTitle = document.querySelector('.js_resultsTitle');
   resultsTitle.classList.remove('hidden');
   for (const eachMovie of moviesData) {
     //Evaluate if movie is in fav arr
@@ -59,7 +59,7 @@ function renderAllMovies() {
     if (eachMovie.image_url) {
       resultsList.innerHTML += `<li class="section__results--list--li js_img ${favClass}" data-id=${eachMovie.mal_id}>
   <img class="section__results--list--li--img " src=" ${eachMovie.image_url}" alt="" />
-  <h3 class="section__results--list--li--title">${eachMovie.title}</h3>
+  <h3 class="section__results--list--li--title ">${eachMovie.title}</h3>
   </li>`;
     } else {
       eachMovie.image_url = eachMovie.image_url.replace(

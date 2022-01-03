@@ -67,8 +67,6 @@
     &__button {
       color: $arrow-white;
       border-style: none;
-      // font-family: $font-main;
-      // text-transform: uppercase;
       margin-top: 14px;
       cursor: pointer;
       height: 60px;
@@ -91,15 +89,10 @@
         box-shadow: 0px 0px;
         margin-left: 15px;
         font-size: 45px;
-        //flex: auto;
       }
-      /*Transición botón buscar*/
-      transition: box-shadow linear 0.3s, background-color linear 0.3s;
 
       &:hover {
-        box-shadow: 0 0 10px $arrow-white;
-        // background-color: $background-color-grey;
-        //color: white;
+        transform: scale(1.2);
       }
     }
   }
@@ -114,6 +107,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 90%;
   }
 
   @include desktop {
@@ -124,14 +118,10 @@
 .section__results {
   display: flex;
   flex-direction: column;
-  //justify-content: center;
 
   @include desktop {
     width: 890px;
     align-items: center;
-
-    // padding-top: 50px;
-    //margin-bottom: 50px;
   }
 
   &--title {
@@ -171,6 +161,15 @@
       padding: 0px 12px 20px;
       box-shadow: $background-color-grey 1.5px 1.5px;
       font-size: 25px;
+      transition: box-shadow linear 0.3s, background-color linear 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 10px $arrow-white;
+        // background-color: $font-grey;
+        // color: $arrow-white;
+        transform: scale(1.1);
+      }
+
       @include tablet {
         font-size: 20px;
       }
@@ -240,7 +239,7 @@
       padding: 0px 12px 20px;
       box-shadow: $red 1.5px 1.5px;
       font-size: 25px;
-      cursor: pointer;
+      // cursor: pointer;
       @include tablet {
         font-size: 20px;
         margin: 25px auto;
@@ -297,10 +296,19 @@
         margin-top: 20px;
         width: 22%;
 
+        transition: box-shadow linear 0.3s, background-color linear 0.3s;
+
+        &:hover {
+          box-shadow: 0 0 10px #270202ea;
+          background-color: #5c0303ea;
+          transform: scale(1.1);
+        }
+
         @include desktop {
           font-size: 35px;
           box-shadow: #800d0dc7 1.5px 1.5px;
           width: 12%;
+          cursor: pointer;
         }
       }
     }
@@ -318,6 +326,7 @@
     margin-top: 50px;
     width: 40%;
     height: 60px;
+    cursor: pointer;
 
     @include tablet {
       border-radius: 90px;
@@ -331,6 +340,7 @@
     &:hover {
       box-shadow: 0 0 10px #b8b8b9;
       background-color: #5c0303ea;
+      transform: scale(1.1);
     }
   }
 }
@@ -343,6 +353,7 @@
   padding: 0px 12px 20px;
   box-shadow: #5c0303ab 1.5px 1.5px;
   cursor: pointer;
+
   @include tablet {
     margin: 25px auto;
     cursor: pointer;

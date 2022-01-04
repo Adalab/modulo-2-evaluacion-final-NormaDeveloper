@@ -1,5 +1,5 @@
 
-# Módulo 2: Ejercicio de evaluación final
+# Módulo 2: Ejercicio de evaluación final.
 
 
 
@@ -21,7 +21,7 @@ En primer lugar hay que realizar una estructura básica sobre este modelo. No ha
 ## 2.	Búsqueda
 La aplicación de búsqueda de serie consta de dos partes:
  . Un campo de texto y un botón para buscar series por su título.
- . Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.
+ . Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título
 
 
 Al hacer clic sobre el botón de Buscar, la aplicación debe conectarse al API abierto de Jikan para la búsqueda de series de anime. Os recomendamos echar un vistazo al JSON que devuelve una petición de búsqueda para ver qué datos son los que necesitamos: https://api.jikan.moe/v3/search/anime?q=naruto

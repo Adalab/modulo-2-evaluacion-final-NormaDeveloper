@@ -39,6 +39,7 @@ function renderAllMovies() {
   for (const eachMovie of moviesData) {
     //Evaluate if movie is in fav arr
     console.log(eachMovie.title);
+
     //Check if the movie is already in fav arr
     const movieInFav = favMoviesData.find(
       (row) => row.mal_id === eachMovie.mal_id
@@ -57,6 +58,7 @@ function renderAllMovies() {
       resultsList.innerHTML += `<li class="section__results--list--li js_img ${favClass}" data-id=${eachMovie.mal_id}>
   <img class="section__results--list--li--img " src=" ${eachMovie.image_url}" alt="" />
   <h3 class="section__results--list--li--title ">${eachMovie.title}</h3>
+  <p class="p">${eachMovie.type}</p>
   </li>`;
     } else {
       eachMovie.image_url = eachMovie.image_url.replace(
@@ -66,7 +68,7 @@ function renderAllMovies() {
 
       resultsList.innerHTML += `<li class="section__results--list--li js_img ${favClass}" data-id=${eachMovie.mal_id}>
   <img class="section__results--list--li--img " src=" ${eachMovie.image_url}" alt="" />
-  <h3 class="section__results--list--li--title">${eachMovie.title}</h3>
+  <h3 class="section__results--list--li--title">${eachMovie.title}</h3>  <p class="p">${eachMovie.type}</p>
   </li>`;
     }
   }

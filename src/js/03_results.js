@@ -9,23 +9,23 @@ function handleClickImg(e) {
   const selectedMovieObj = moviesData.find(
     (row) => row.mal_id === clickedMovieId
   );
-  console.log(selectedMovieObj);
+  console.log('TITULO ' + selectedMovieObj.title);
 
-  //Look for the clicked movie in favMovieData by ID
-  const movieInFavMoviesData = favMoviesData.find(
-    (row) => row.mal_id === clickedMovieId
-  );
+  // //Look for the clicked movie in favMovieData by ID
+  // const movieInFavMoviesData = favMoviesData.find(
+  //   (row) => row.mal_id === clickedMovieId
+  // );
 
-  //Add/remove movie from favorite arr
-  if (movieInFavMoviesData === undefined) {
-    //If the movie is not in favMoviesData, then add it
-    favMoviesData.push(selectedMovieObj);
-  } else {
-    //If the movie is already in favMoviesData, then remove it
-    favMoviesData = favMoviesData.filter(
-      (row) => row.mal_id !== clickedMovieId
-    );
-  }
+  // //Add/remove movie from favorite arr
+  // if (movieInFavMoviesData === undefined) {
+  //   //If the movie is not in favMoviesData, then add it
+  //   favMoviesData.push(selectedMovieObj);
+  // } else {
+  //   //If the movie is already in favMoviesData, then remove it
+  //   favMoviesData = favMoviesData.filter(
+  //     (row) => row.mal_id !== clickedMovieId
+  //   );
+  // }
 
   //Save favorites in Local Storage
   setFavMoviesInLocalStorage();

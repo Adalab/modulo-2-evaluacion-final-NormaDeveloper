@@ -39,7 +39,7 @@ Anime series search engine web application. Individual project developed with Ja
 
 
 
-## Interactions
+## Features
 
 
 ## 1.	Search

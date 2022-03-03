@@ -1,7 +1,7 @@
 
 # Web application: anime series search engine
 
-## **Module 2: Final assessment exercise**
+## **Module 2 of Adalab Bootcamp: Final assessment exercise**
 
 ## Project developed with: 
 ### 1. Attention to detail 🔎

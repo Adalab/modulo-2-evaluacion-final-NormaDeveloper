@@ -1,9 +1,9 @@
 
-# Anime series search engine web application with mobile first responsive layout
+# Anime series search engine web application 
+## Developed with JavaScript and mobile first responsive layout
 
-## **Module 2 of Adalab Bootcamp: Final assessment exercise**
 
-## Project developed with: 
+### Project also developed with: 
 ### 1. Attention to detail 🔎
 ### 2. Clean and tidy code 🧹
 ### 3. Fun 🎉 <br> <br> 
@@ -16,7 +16,7 @@
 
 ## Description
 
-Anime series search engine web application. Individual project developed with Javascript, NodeJs, npm, Gulp, HTML5, CSS3, SASS, Flexbox, BEM, Mixins, transitions, mobile first responsive layout. Clean and tidy code.
+Anime series search engine web application. Individual project developed with Javascript, NodeJs, npm, Gulp, HTML5, CSS3, SASS, Flexbox, BEM, Mixins, transitions, mobile first responsive layout. Clean and tidy code. This was the final assessment exercise of Module 2 at Adalab Bootcamp.
 
 ### Tech stack and Tools
 

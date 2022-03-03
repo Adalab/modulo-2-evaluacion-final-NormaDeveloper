@@ -1,5 +1,12 @@
 
-# Módulo 2: Ejercicio de evaluación final
+# Web application: anime series search engine
+
+## **Module 2: Final assessment exercise**
+
+## Project made with: 
+### 1. Attention to detail 🔎
+### 2. Clean and tidy code 🧹
+### 3. Fun 🎉 <br> <br> 
 
 
 
@@ -8,50 +15,49 @@
 ![](https://i.imgur.com/soz1DM9.png)
 
 
-Antes de empezar, hay que crear un nuevo repositorio desde GitHub Classroom usando este enlace. Una vez creado, hay que clonar en nuestro ordenador y en la carpeta creada empezaremos a trabajar en el ejercicio.
-A continuación, si quieres, hay que descargar e incluir en el proyecto el starter kit de Adalab.
-Enunciado
-El ejercicio consiste en desarrollar una aplicación web de búsqueda de series de anime, que nos permite des/marcar las series como favoritas y guardarlas en local storage.
-El ejercicio también tiene una parte de maquetación con HTML y Sass, os recomendamos dedicar esfuerzo a la maquetación una vez terminada la parte de JavaScript, ya que los criterios de evaluación están relacionados con esta última.
-Vamos de definir los distintos hitos del ejercicio:
-## 1.	Estructura básica
-En primer lugar hay que realizar una estructura básica sobre este modelo. No hay que preocuparse por las medidas, colores ni tipografía hasta un hito posterior.
+## Assignment
+
+The exercise consists of developing a web application to search for anime series, which allows us to un/mark series as favorites and save them in local storage.
 
 
-## 2.	Búsqueda
-La aplicación de búsqueda de serie consta de dos partes:
- . Un campo de texto y un botón para buscar series por su título.
- . Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.
+## Solved interactions
 
 
-Al hacer clic sobre el botón de Buscar, la aplicación debe conectarse al API abierto de Jikan para la búsqueda de series de anime. Os recomendamos echar un vistazo al JSON que devuelve una petición de búsqueda para ver qué datos son los que necesitamos: https://api.jikan.moe/v3/search/anime?q=naruto
-Para construir la URL de búsqueda hay que recoger el texto que ha introducido la usuaria en el campo de búsqueda.
-Por cada serie contenido en el resultado de la búsqueda hay que pintar una tarjeta donde mostramos una imagen de la serie y el título.
-Algunas de las series que devuelve el API no tienen imagen. En ese caso hay que mostrar una imagen de relleno. Podemos crear una imagen de relleno con el servicio de placeholder.com donde en la propia URL indicamos el tamaño, colores, texto: https://via.placeholder.com/210x295/ffffff/666666/? text=TV.
-Para pintar la información en la página se puede elegir entre hacerlo de forma básica con innerHTML o manipulando de forma avanzada el DOM
+## 1.	Search
+The series search application contains two parts: <br>
+ . A text field and a button to search for series by their title. <br>
+ . A list of search results where the series poster and title are displayed.
 
-## 3.	Favoritos
-Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son sus series favoritas. Para ello, al hacer clic sobre una serie debe pasar lo siguiente:
+When you click on the Search button, the application connects to Jikan's open API for searching anime series. 
 
-El color de fondo y el de fuente se intercambian, indicando que es una serie favorita.
-Hay que mostrar un listado en la parte izquierda de la pantalla, debajo del formulario de búsqueda, con las series favoritas. Os recomendamos crear un variable o constante de tipo array en JS para almacenar las series favoritas.
-Las series favoritas deben seguir apareciendo a la izquierda aunque la usuaria realice otra búsqueda.
+To construct the search URL, the text entered by the user in the search field is collected. 
 
-## 4.	Almacenamiento local
-Hay que almacenar el listado de favoritos en el localStorage. De esta forma, al recargar la página el listado de favoritos se debe mostrarse.
-
-## 5.	BONUS: Borrar favoritos
+For each series contained in the search result a card is painted where we show an image of the series and the title. Some of the series returned by the API do not have an image. In that case a filler image is displayed. 
 
 
-Y que, si realizamos una nueva búsqueda y sale una serie que ya es favorita, aparezca ya resaltada en los resultados de búsqueda (con colores de fondo y texto intercambiados).
-Y ya sería fantástico si al final de la lista de favoritos hay un botón para borrarlos todos los favoritos a la vez.
-## 6.	BONUS: Afinar la maquetación
-Una vez terminada la parte de interacción, podemos centrarnos en la parte de maquetación donde tenéis libertad para decidir los estilo. En cualquier caso os dejamos una propuesta gráfica.
 
-## Entrega
-El límite de entrega es el martes 4 de enero a las 14 00.
-Solo debéis hacer commits y merges en la rama master de vuestro repositorio hasta la fecha límite. Si después del ejercicio queréis seguir trabajando sobre el ejercicio, lo podéis hacer en otra rama y no debéis combinarla (merge) hasta que los profesores os lo indiquen.
-La evaluación solo se considerará terminada cuando:
+## 2.	Favorites
+Once the search results are displayed, the user is able to indicate which are his favorite series. To do this, the following happens when clicking on a series: <br>
 
-Esté publicada en GitHub Pages y esté funcionando.
-El enlace a GitHub Pages esté en la página página principal del repositorio, en la parte superior, al lado de la descripción.
+The background color and the font color are switched, indicating that it is a favorite series. <br>
+
+A list is displayed on the left side of the screen, below the search form, with the favorite series.  <br>
+
+The favorite series continue to appear on the left side of the screen even if the user performs another search.
+
+
+## 3. Local storage
+The list of favorites is stored in the localStorage. This way, when reloading the page the list of favorites is displayed.
+
+## 4. Delete favorites
+If we perform a new search and a series that is already a favorite comes up, it is already highlighted in the search results (with changed background and text colors).
+
+At the end of the favorites list there is a button to delete all favorites at once.
+
+
+## About me
+
+ [![](https://i.imgur.com/RxMHei3.png)](https://www.linkedin.com/in/normarivas)         [![](https://i.imgur.com/C85yS6z.png)](https://twitter.com/NormaRivas_)  
+ 
+
+

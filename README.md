@@ -66,7 +66,7 @@ The favorite series continue to appear on the left side of the screen even if th
 
 
 ## 3. Local storage
-The list of favorites is stored in the localStorage. This way, when reloading the page the list of favorites is displayed.
+The list of favorites is stored in the localStorage. So when reloading the page the list of favorites is displayed.
 
 ## 4. Delete favorites
 If we perform a new search and a series that is already a favorite comes up, it is already highlighted in the search results (with changed background and text colors).

@@ -1,5 +1,5 @@
 
-# Web application: anime series search engine
+# Anime series search engine web application
 
 ## **Module 2 of Adalab Bootcamp: Final assessment exercise**
 

@@ -14,9 +14,9 @@
 ![](https://i.imgur.com/zehbmMj.png)
 ![](https://i.imgur.com/soz1DM9.png)
 
-## Assignment
+## Description
 
-The exercise consists of developing a web application to search for anime series, which allows us to un/mark series as favorites and save them in local storage.
+This is a web application to search for anime series, which allows us to un/mark series as favorites and save them in local storage. It is developed with mobile-first responsive layout.
 
 ### Tech stack and Tools
 

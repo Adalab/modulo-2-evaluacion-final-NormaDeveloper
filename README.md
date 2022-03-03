@@ -16,7 +16,7 @@
 
 ## Description
 
-This is a web application to search for anime series, which allows us to un/mark series as favorites and save them in local storage. It is developed with mobile-first responsive layout.
+Anime series search engine web application. Individual project developed with Javascript, NodeJs, npm, Gulp and layout with HTML5, CSS3, SASS, Flexbox, BEM, Mixins, transitions, mobile first responsive layout. Clean and tidy code.
 
 ### Tech stack and Tools
 

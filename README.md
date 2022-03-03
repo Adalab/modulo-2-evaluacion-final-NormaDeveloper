@@ -1,5 +1,5 @@
 
-# Anime series search engine web application with mobile first responsive layout
+# Anime series search engine web application  (mobile first responsive layout)
 
 ## **Module 2 of Adalab Bootcamp: Final assessment exercise**
 
